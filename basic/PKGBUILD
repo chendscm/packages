@@ -106,7 +106,7 @@ depends=(
 
 source=(basic.conf dockersh gen_boot locale.gen)
 md5sums=('b3912821462b31bc2faa3ff2c10d796b'
-         '6c61bae96a915debf786e389838d1e83'
+         '6ea8afa0c368a916ce601fee7bc229bb'
          '63eea87d913d98738c3a2730e7a0319e'
          '32a4472fe56ceb6939bc3af6fc9270eb')
 

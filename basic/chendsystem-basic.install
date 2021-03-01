@@ -1,8 +1,8 @@
 post_install() {
-    echo ==> Setting up system chend/basic
+    echo ==> Setting up system chendsystem/basic
 
     # set up locale
-    cp /opt/chend/basic/etc/locale.gen /etc/locale.gen
+    cp /opt/chendsystem/basic/etc/locale.gen /etc/locale.gen
     locale-gen
 
     # make initramfs bootable
