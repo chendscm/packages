@@ -6,7 +6,8 @@ install=$pkgname.install
 depends=(
 	# system
 	cups
-	plasma-meta
+	#plasma-meta
+	i3-wm
 	archlinux-themes-sddm
 
 	# virtualization

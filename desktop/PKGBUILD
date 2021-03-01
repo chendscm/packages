@@ -47,9 +47,9 @@ depends=(
 	telegram-desktop
 
 	#desktop
-	plasma-wayland-session
-	plasma-nm
-	kde-applications-meta
+	#plasma-wayland-session
+	#plasma-nm
+	#kde-applications-meta
 
 	# Games & entertainments
 	vlc
