@@ -106,7 +106,7 @@ with enter_once(DIR):
     # make_top_level_package("desktop-small")
     # make_top_level_package("desktop")
 
-    repo-add chend.db.tar.gz *.pkg.*
+    repo-add chendsystem.db.tar.gz *.pkg.*
     tree -H '.' -L 1 --noreport --charset utf-8 > index.html
 
     ls -lah

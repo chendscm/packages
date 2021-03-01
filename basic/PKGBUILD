@@ -1,4 +1,4 @@
-pkgname=chend-basic
+pkgname=chendsystem-basic
 pkgver=1
 pkgrel=1
 arch=(any)
@@ -114,10 +114,10 @@ package() {
 	cd ${pkgdir}
 	mkdir -p "${pkgdir}/etc/sysctl.d/"
 	mkdir -p "${pkgdir}/usr/bin/"
-	mkdir -p "${pkgdir}/opt/chend/basic/etc/"
+	mkdir -p "${pkgdir}/opt/chendsystem/basic/etc/"
 
 	install -m 644 "${srcdir}/basic.conf" "${pkgdir}/etc/sysctl.d/"
 	install -m 755 "${srcdir}/dockersh" "${pkgdir}/usr/bin/"
 	install -m 755 "${srcdir}/gen_boot" "${pkgdir}/usr/bin/"
-	install -m 644 "${srcdir}/locale.gen" "${pkgdir}/opt/chend/basic/etc/"
+	install -m 644 "${srcdir}/locale.gen" "${pkgdir}/opt/chendsystem/basic/etc/"
 }
