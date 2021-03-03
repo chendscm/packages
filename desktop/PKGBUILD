@@ -15,7 +15,7 @@ depends=(
 	system-config-printer
 
 	# nvidia
-	nvidia-container-toolkit
+	#nvidia-container-toolkit
 	nvidia
 	nvidia-utils
 	nvidia-settings
@@ -27,7 +27,7 @@ depends=(
 
 	# web & network
 	chromium
-	google-chrome
+	#google-chrome
 	firefox
 	lastpass
 	brave-bin
@@ -41,9 +41,7 @@ depends=(
 	pdfarranger
 	kbibtex
 	slack-desktop
-	teams
 	sagemath
-	zoom
 	telegram-desktop
 
 	#desktop
@@ -63,8 +61,6 @@ depends=(
 	sqlitebrowser
 	opencv
 	intel-mkl
-	anaconda
-	katex
 	llvm
 	valgrind
 

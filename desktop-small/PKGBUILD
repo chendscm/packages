@@ -8,7 +8,7 @@ depends=(
 	cups
 	#plasma-meta
 	i3-wm
-	archlinux-themes-sddm
+	#archlinux-themes-sddm
 
 	# virtualization
 	ovmf
