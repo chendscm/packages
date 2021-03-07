@@ -2,78 +2,27 @@ pkgname=chendsystem-desktop
 pkgver=1
 pkgrel=1
 arch=(any)
+install=$pkgname.install
 depends=(
-	chendsystem-desktop-small
-
 	# system
-	exfat-utils
-	ntfs-3g
-	partitionmanager
-	gparted
-	hyper
-	alacritty
-	system-config-printer
+	cups #  打印
 
 	# nvidia
-	#nvidia-container-toolkit
 	nvidia
-	nvidia-utils
-	nvidia-settings
-	magma
-	cuda
-	cuda-tools
-	cudnn
-	nccl
 
-	# web & network
-	chromium
-	#google-chrome
+	# web network
 	firefox
-	lastpass
-	brave-bin
 
-	# office
-	lyx
-	texlive-langchinese
-	gimp
-	simplescreenrecorder
-	kgraphviewer
-	pdfarranger
-	kbibtex
-	slack-desktop
-	sagemath
-	telegram-desktop
-
-	#desktop
-	#plasma-wayland-session
-	#plasma-nm
-	#kde-applications-meta
-
-	# Games & entertainments
-	vlc
-	youtube-dl
-	you-get
-	mencoder
+	# desktop
+	i3
 
 	# development
-	visual-studio-code-bin
-	meld
-	sqlitebrowser
-	opencv
-	intel-mkl
-	llvm
-	valgrind
-
-	# artwork
-	archlinux-wallpaper
-	archlinux-artwork
+	emacs
 
 	# fonts
 	wqy-bitmapfont
 	wqy-microhei
 	wqy-zenhei
-	ttf-arphic-ukai
-	ttf-arphic-uming
 	adobe-source-han-sans-cn-fonts
 
 	# i18n
@@ -85,10 +34,30 @@ depends=(
 	fcitx5-configtool-git
 
 	# virtualization
-	genymotion
+	ovmf
+	qemu
+	virt-manager
 	virtualbox
-	virtualbox-guest-iso
-	virtualbox-host-modules-arch
-	virtualbox-guest-utils
-	virtualbox-ext-vnc
 )
+
+source=(qemu.conf
+        https://raw.githubusercontent.com/coraxx/netdata_nv_plugin/master/python_modules/pynvml.py
+        https://raw.githubusercontent.com/coraxx/netdata_nv_plugin/master/nv.chart.py
+        https://raw.githubusercontent.com/coraxx/netdata_nv_plugin/master/nv.conf)
+md5sums=('429cd7c0aba6bb70271f3dbc0a669096'
+         SKIP SKIP SKIP)
+
+package() {
+	cd ${pkgdir}
+	mkdir -p "${pkgdir}/etc/netdata/python.d/"
+	mkdir -p "${pkgdir}/etc/sddm.conf.d/"
+	mkdir -p "${pkgdir}/opt/chendsystem/etc/libvirt/"
+	mkdir -p "${pkgdir}/usr/lib/netdata/python.d/python_modules/"
+
+	install -m 644 "${srcdir}/pynvml.py" "${pkgdir}/usr/lib/netdata/python.d/python_modules/"
+	install -m 644 "${srcdir}/nv.chart.py" "${pkgdir}/usr/lib/netdata/python.d/"
+	install -m 644 "${srcdir}/nv.conf" "${pkgdir}/etc/netdata/python.d/"
+
+	install -m 755 "${srcdir}/qemu.conf" "${pkgdir}/opt/chendsystem/etc/libvirt/"
+	install -m 755 "${srcdir}/sddm.conf" "${pkgdir}/etc/sddm.conf.d/"
+}

@@ -6,7 +6,7 @@ post_install() {
     locale-gen
 
     # make initramfs bootable
-    sed -i 's/archlinux\/base/chendsystem\/basic/g' /etc/docker-btrfs.json
+    sed -i 's/archlinux\/base/chendscm\/archlinux-basic/g' /etc/docker-btrfs.json
     perl -i -p -e 's/(?<=^HOOKS=\()(.*)(?=\))/$1 docker-btrfs/g' /etc/mkinitcpio.conf
 
     # setting up services

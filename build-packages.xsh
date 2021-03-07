@@ -103,7 +103,6 @@ with enter_once(DIR):
     print(f"==> Generating packages at {DIR}")
 
     make_top_level_package("basic")
-    make_top_level_package("desktop-small")
     make_top_level_package("desktop")
 
     repo-add chendsystem.db.tar.gz *.pkg.*
