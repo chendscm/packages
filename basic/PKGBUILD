@@ -24,6 +24,7 @@ depends=(
 	pv
 	dos2unix
 	cloc
+	emacs
 	vim
 	git
 	git-lfs
@@ -46,10 +47,6 @@ depends=(
 	# network related
 	dhcpcd
 	wireguard-tools
-	networkmanager
-	networkmanager-openconnect
-	networkmanager-pptp
-	networkmanager-strongswan
 	aria2
 	wget
 	httpie
@@ -106,7 +103,7 @@ depends=(
 
 source=(basic.conf dockersh gen_boot locale.gen)
 md5sums=('b3912821462b31bc2faa3ff2c10d796b'
-         '6ea8afa0c368a916ce601fee7bc229bb'
+         'bf51807986aa7487a08eb68cb3e3499a'
          '63eea87d913d98738c3a2730e7a0319e'
          '32a4472fe56ceb6939bc3af6fc9270eb')
 

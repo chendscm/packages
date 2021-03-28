@@ -91,7 +91,7 @@ def make_top_level_package(pkgname):
 
 def upload():
     git init
-    git remote add origin https://github.com/chenD-scm/packages.git
+    git remote add origin https://github.com/chendscm/packages.git
     git checkout --orphan gh-pages
     git add .
     git status
