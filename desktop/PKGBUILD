@@ -50,7 +50,6 @@ md5sums=('429cd7c0aba6bb70271f3dbc0a669096'
 package() {
 	cd ${pkgdir}
 	mkdir -p "${pkgdir}/etc/netdata/python.d/"
-	mkdir -p "${pkgdir}/etc/sddm.conf.d/"
 	mkdir -p "${pkgdir}/opt/chendsystem/etc/libvirt/"
 	mkdir -p "${pkgdir}/usr/lib/netdata/python.d/python_modules/"
 
@@ -59,5 +58,4 @@ package() {
 	install -m 644 "${srcdir}/nv.conf" "${pkgdir}/etc/netdata/python.d/"
 
 	install -m 755 "${srcdir}/qemu.conf" "${pkgdir}/opt/chendsystem/etc/libvirt/"
-	install -m 755 "${srcdir}/sddm.conf" "${pkgdir}/etc/sddm.conf.d/"
 }
