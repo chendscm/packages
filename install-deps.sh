@@ -10,7 +10,7 @@ chmod 0600 /home/user/.ssh/id_rsa
 ssh-keyscan -t rsa github.com >> /home/user/.ssh/known_hosts
 
 git config --global user.email "chend.scm@gmail.com"
-git config --global user.name "chenD-scm"
+git config --global user.name "chendscm"
 
 sudo mkdir tmp
 sudo chown user:user tmp
