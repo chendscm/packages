@@ -47,6 +47,7 @@ depends=(
 	# network related
 	dhcpcd
 	wireguard-tools
+	iwd
 	aria2
 	wget
 	httpie
