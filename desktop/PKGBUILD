@@ -18,6 +18,7 @@ depends=(
  	i3blocks
 	i3lock
 	i3status
+	dmenu
 
 	# development
 	emacs
