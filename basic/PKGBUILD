@@ -13,7 +13,6 @@ depends=(
 	screen
 	mosh
 	openssh
-	xonsh
 	bash-completion
 
 	# useful command line tools
