@@ -6,11 +6,12 @@ install=$pkgname.install
 depends=(
 	# system
 	cups #  打印
+	alacritty
 
 	# nvidia
 	nvidia
 
-	# web network
+	# web & network
 	firefox
 
 	# desktop
@@ -19,6 +20,9 @@ depends=(
 	i3lock
 	i3status
 	dmenu
+
+	# office
+	libreoffice-still
 
 	# development
 	emacs
