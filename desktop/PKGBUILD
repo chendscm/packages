@@ -61,12 +61,12 @@ package() {
 	mkdir -p "${pkgdir}/etc/netdata/python.d/"
 	mkdir -p "${pkgdir}/opt/chendsystem/etc/libvirt/"
 	mkdir -p "${pkgdir}/usr/lib/netdata/python.d/python_modules/"
-	mkdir -p "${pkgdir}/sh/"     
+	mkdir -p "${pkgdir}/opt/chendsystem/sh/"     
 
 	install -m 644 "${srcdir}/pynvml.py" "${pkgdir}/usr/lib/netdata/python.d/python_modules/"
 	install -m 644 "${srcdir}/nv.chart.py" "${pkgdir}/usr/lib/netdata/python.d/"
 	install -m 644 "${srcdir}/nv.conf" "${pkgdir}/etc/netdata/python.d/"
 
 	install -m 755 "${srcdir}/qemu.conf" "${pkgdir}/opt/chendsystem/etc/libvirt/"
-	install -m 644 "{{srcdir}/install-eaf.sh" "${pkgdir}/opt/chendsystem/sh/"
+	install -m 644 "${srcdir}/install-eaf.sh" "${pkgdir}/opt/chendsystem/sh/"
 }
