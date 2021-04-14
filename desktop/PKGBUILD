@@ -48,11 +48,12 @@ depends=(
 	virtualbox
 )
 
-source=(qemu.conf
+source=(qemu.conf install-eaf.sh
         https://raw.githubusercontent.com/coraxx/netdata_nv_plugin/master/python_modules/pynvml.py
         https://raw.githubusercontent.com/coraxx/netdata_nv_plugin/master/nv.chart.py
         https://raw.githubusercontent.com/coraxx/netdata_nv_plugin/master/nv.conf)
 md5sums=('429cd7c0aba6bb70271f3dbc0a669096'
+         '906871315069220bd3523046a07e2db7'
          SKIP SKIP SKIP)
 
 package() {
@@ -60,10 +61,12 @@ package() {
 	mkdir -p "${pkgdir}/etc/netdata/python.d/"
 	mkdir -p "${pkgdir}/opt/chendsystem/etc/libvirt/"
 	mkdir -p "${pkgdir}/usr/lib/netdata/python.d/python_modules/"
+	mkdir -p "${pkgdir}/sh/"     
 
 	install -m 644 "${srcdir}/pynvml.py" "${pkgdir}/usr/lib/netdata/python.d/python_modules/"
 	install -m 644 "${srcdir}/nv.chart.py" "${pkgdir}/usr/lib/netdata/python.d/"
 	install -m 644 "${srcdir}/nv.conf" "${pkgdir}/etc/netdata/python.d/"
 
 	install -m 755 "${srcdir}/qemu.conf" "${pkgdir}/opt/chendsystem/etc/libvirt/"
+	install -m 644 "{{srcdir}/install-eaf.sh" "${pkgdir}/opt/chendsystem/sh/"
 }
