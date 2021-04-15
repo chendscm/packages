@@ -1,0 +1,13 @@
+pyqt5
+pyqt5-sip
+pyqtwebengine
+pymupdf
+qrcode
+qtconsole
+markdown
+epc
+retrying
+pygetwindow; sys_platform == 'win32'
+
+numpy
+pandas

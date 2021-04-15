@@ -13,4 +13,7 @@ post_install() {
     systemctl enable sshd docker netdata iwd iptables dhcpcd
     sed -i 's/.*PasswordAuthentication .*/PasswordAuthentication no/g' /etc/ssh/sshd_config
     sed -i 's/#NAutoVTs/NAutoVTs/g' /etc/systemd/logind.conf
+
+    # python packages
+    pip install --user -r /opt/chendsystem/code/python/py-requirements.txt
 }
