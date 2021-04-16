@@ -101,7 +101,12 @@ depends=(
 	boost
 
 	# eaf
+	python-pyqt5
+	python-pyqt5-sip
+	python-pyqtwebengine
 	wmctrl
+	python-qrcode
+	python-qtconsole
 	filebrowser-bin
 )
 
@@ -110,7 +115,7 @@ md5sums=('b3912821462b31bc2faa3ff2c10d796b'
          'bf51807986aa7487a08eb68cb3e3499a'
          '63eea87d913d98738c3a2730e7a0319e'
          '32a4472fe56ceb6939bc3af6fc9270eb'
-         '42435402d24b07ddd4f61d4c795cc98e')
+         '403905ebb7b4decb8284d1159feac1a3')
 
 package() {
 	cd ${pkgdir}
