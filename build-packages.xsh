@@ -71,6 +71,7 @@ def yay_deps(filename, stack):
             if b in d:
                 d = d.split(b)[0]
         d = d.strip()
+	print("d: {},\n installed: {},\n stack: {}\n".format(d, installed, stack))
         if $(sh -c @(f"pacman -Ss ^{d}$ || true")).strip() == "" and d not in installed and d not in stack:
             print(f"==> Recursively building {d}")
             stack.add(d)

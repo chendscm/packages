@@ -108,6 +108,11 @@ depends=(
 	python-qrcode
 	python-qtconsole
 	filebrowser-bin
+
+	# tools
+	w3m
+	stardict
+	sdcv
 )
 
 source=(basic.conf dockersh gen_boot locale.gen py-requirements.txt)
