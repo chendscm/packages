@@ -77,6 +77,7 @@ depends=(
 	mkinitcpio-docker-hooks
 	intel-ucode
 	amd-ucode
+	alsa-utils
 
 	# compression
 	zip
@@ -113,6 +114,7 @@ depends=(
 	w3m
 	stardict
 	sdcv
+	baidupcs-go
 )
 
 source=(basic.conf dockersh gen_boot locale.gen py-requirements.txt)
