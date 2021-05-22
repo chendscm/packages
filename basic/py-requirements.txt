@@ -4,3 +4,6 @@ retrying
 
 numpy
 pandas
+openpyxl
+
+docker-compose

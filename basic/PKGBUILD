@@ -122,7 +122,7 @@ md5sums=('b3912821462b31bc2faa3ff2c10d796b'
          'bf51807986aa7487a08eb68cb3e3499a'
          '63eea87d913d98738c3a2730e7a0319e'
          '32a4472fe56ceb6939bc3af6fc9270eb'
-         '403905ebb7b4decb8284d1159feac1a3')
+         'e70923388f1154013d1ed667203fcbe8')
 
 package() {
 	cd ${pkgdir}
