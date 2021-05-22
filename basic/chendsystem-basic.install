@@ -15,6 +15,6 @@ post_install() {
     sed -i 's/#NAutoVTs/NAutoVTs/g' /etc/systemd/logind.conf
 
     # python packages
-    # npm install
+    npm install
     pip3 install -r /opt/chendsystem/code/python/py-requirements.txt
 }
