@@ -78,6 +78,7 @@ depends=(
 	intel-ucode
 	amd-ucode
 	alsa-utils
+	acpi
 
 	# compression
 	zip
