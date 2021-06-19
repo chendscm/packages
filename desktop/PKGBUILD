@@ -28,7 +28,6 @@ depends=(
 	zathura-cb
 	zathura-djvu
 	zathura-pdf-mupdf
-	zathura-pdf-poppler
 	zathura-ps
 
 	# development
