@@ -110,6 +110,9 @@ depends=(
 	python-qrcode
 	python-qtconsole
 	filebrowser-bin
+	
+	# sync
+	syncthing
 
 	# tools
 	w3m
