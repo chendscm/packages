@@ -79,6 +79,7 @@ depends=(
 	amd-ucode
 	alsa-utils
 	acpi
+	ranger
 
 	# compression
 	zip
