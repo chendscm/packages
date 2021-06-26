@@ -119,7 +119,6 @@ depends=(
 	w3m
 	stardict
 	sdcv
-	baidupcs-go
 )
 
 source=(basic.conf dockersh gen_boot locale.gen py-requirements.txt)
