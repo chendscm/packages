@@ -103,6 +103,8 @@ depends=(
 	fmt
 	boost
 
+        # jupyter
+        jupyter-notebook
 	# eaf
 	python-pyqt5
 	python-pyqt5-sip
