@@ -15,10 +15,10 @@ post_install() {
     sed -i 's/#NAutoVTs/NAutoVTs/g' /etc/systemd/logind.conf
 
     # QUANTAXIS
-    mkdir -p /opt/chendsystem/app/QUANTAXIS
-    cd /opt/chendsystem/app/QUANTAXIS/
-    wget https://raw.githubusercontent.com/QUANTAXIS/QUANTAXIS/master/docker/qaservice_docker.sh
-    bash qaservice_docker.sh
+    #mkdir -p /opt/chendsystem/app/QUANTAXIS
+    #cd /opt/chendsystem/app/QUANTAXIS/
+    #wget https://raw.githubusercontent.com/QUANTAXIS/QUANTAXIS/master/docker/qaservice_docker.sh
+    #bash qaservice_docker.sh
 
 
     # python packages

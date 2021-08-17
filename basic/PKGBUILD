@@ -116,6 +116,7 @@ depends=(
 	
 	# sync
 	syncthing
+        onedrive
 
 	# tools
 	w3m
