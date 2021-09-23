@@ -105,14 +105,6 @@ depends=(
 
         # jupyter
         jupyter-notebook
-	# eaf
-	python-pyqt5
-	python-pyqt5-sip
-	python-pyqtwebengine
-	wmctrl
-	python-qrcode
-	python-qtconsole
-	filebrowser-bin
 	
 	# sync
 	syncthing
@@ -129,7 +121,7 @@ md5sums=('b3912821462b31bc2faa3ff2c10d796b'
          'bf51807986aa7487a08eb68cb3e3499a'
          '63eea87d913d98738c3a2730e7a0319e'
          '32a4472fe56ceb6939bc3af6fc9270eb'
-         'e70923388f1154013d1ed667203fcbe8')
+         'd2a94ba18e9407533058cb99bb9b4bf5')
 
 package() {
 	cd ${pkgdir}

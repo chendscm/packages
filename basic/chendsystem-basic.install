@@ -20,8 +20,6 @@ post_install() {
     #wget https://raw.githubusercontent.com/QUANTAXIS/QUANTAXIS/master/docker/qaservice_docker.sh
     #bash qaservice_docker.sh
 
-
     # python packages
-    npm install
     pip3 install -r /opt/chendsystem/code/python/py-requirements.txt
 }
