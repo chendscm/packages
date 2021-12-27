@@ -81,6 +81,10 @@ depends=(
 	acpi
 	ranger
 
+        # bluetooth
+        bluez
+        bluez-utils
+
 	# compression
 	zip
 	pigz
