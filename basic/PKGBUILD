@@ -118,6 +118,7 @@ depends=(
 	w3m
 	stardict
 	sdcv
+	sshuttle
 )
 
 source=(basic.conf dockersh gen_boot locale.gen py-requirements.txt)

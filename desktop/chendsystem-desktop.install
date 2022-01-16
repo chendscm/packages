@@ -5,9 +5,7 @@ post_install() {
     ln -s /opt/cuda /usr/local/cuda
 
     # eaf dependencies
-    mkdir /opt/chendsystem/app
-    cd /opt/chendsystem/app
-    git clone --depth=1 -b master https://github.com/emacs-eaf/emacs-application-framework.git
-    sh /opt/chendsystem/app/install-eaf.sh
+    cd /opt/chendsystem/git
+    sh /opt/chendsystem/git/emacs-application-framework/install-eaf.sh
 }
 
