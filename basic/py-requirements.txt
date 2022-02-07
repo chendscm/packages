@@ -3,3 +3,7 @@ pandas
 openpyxl
 
 docker-compose
+
+# eaf
+epc
+lxml
