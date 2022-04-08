@@ -4,6 +4,6 @@ openpyxl
 
 docker-compose
 
-# eaf
-epc
-lxml
+# emacs-eaf
+pymupdf
+

@@ -22,7 +22,7 @@ depends=(
 	dmenu
 
 	# office
-	libreoffice-still
+	libreoffice-fresh
 	# pdf
 	zathura
 	zathura-cb

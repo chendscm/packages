@@ -118,12 +118,6 @@ depends=(
 	syncthing
         onedrive
 
-	# eaf
-	wmctrl
-	python-pyqt5
-	python-pyqt5-sip
-	python-pyqt5-webengine
-
 	# tools
 	w3m
 	stardict
@@ -136,7 +130,7 @@ md5sums=('b3912821462b31bc2faa3ff2c10d796b'
          'bf51807986aa7487a08eb68cb3e3499a'
          '63eea87d913d98738c3a2730e7a0319e'
          '32a4472fe56ceb6939bc3af6fc9270eb'
-         'bd00a932ec16259970fafe36f44617aa')
+         '0d291965f89aeb2da0dd0491ac513afb')
 
 package() {
 	cd ${pkgdir}
