@@ -30,9 +30,6 @@ depends=(
 	zathura-pdf-mupdf
 	zathura-ps
 
-	# development
-	emacs
-
 	# fonts
 	wqy-bitmapfont
 	wqy-microhei

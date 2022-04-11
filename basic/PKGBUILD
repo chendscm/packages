@@ -23,7 +23,7 @@ depends=(
 	pv
 	dos2unix
 	cloc
-	emacs
+	emacs # emacs28.1 get error in lispy eval python (2022.4.10)
 	vim
 	git
 	git-lfs
